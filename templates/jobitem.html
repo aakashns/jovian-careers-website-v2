@@ -1,0 +1,20 @@
+<div class="border-bottom row" style="margin-bottom:16px;padding-bottom:8px;">
+  <div class="col-10">
+    <h4 
+      style="color:rgb(120,120,120); margin-bottom:4px;">
+      {{job['title']}}
+    </h4>
+    <div>
+      <b>Location:</b> {{job['location']}}
+    </div>
+    {% if 'salary' in job %}
+    <div>
+      <b>Salary:</b> {{job['salary']}}
+    </div>
+    {% endif %}
+  </div>
+  <div class="col-2 padding-right:16px">
+    <a href="mailto:hello@jovian.ai?subject=Application%20for%20{{job['title']}}&body=My%20name%3A%20%3Cyour%20name%20here%3E%0D%0A%0D%0AMy%20Resume%20link%3A%20%3Cresume%20link%3E%0D%0A%0D%0AMy%20LinkedIn%20link%3A%20%3Clinkedin%20in%3E%0D%0A%0D%0A" type="button" class="btn btn-outline-primary float-right align-middle" >Apply</a>
+  </div>
+  
+</div>
