@@ -2,24 +2,14 @@
 <html>
   <head>
     <title>Jovian Careers</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <style>
-      #banner {
-        height: 360px;
-        width: 100%;
-        object-fit:cover;
-        margin-bottom: 16px;
-      }
-    </style>
+    {% include 'bootstrap.html' %}
   </head>
   <body>
     {% include 'nav.html' %}
-    <img class="img-fluid" id="banner" src="https://jovian-careers-website.aakashns.repl.co/static/banner.jpeg" >
+    {% include 'banner.html' %}
     <div class="container">
       <h1 class="text-center mt-2 mb-4">
-        {{company_name}} Careers
+        Jovian Careers
       </h1>
       <div class="row" style="margin-bottom:32px">
         <div class="col-md-6">
